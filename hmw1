@@ -1,0 +1,15 @@
+liste=[1,"ayse",5,19.2,"pyhton"]
+print(liste)
+
+a=liste[0]
+b=liste[1]
+
+k=0
+
+while True:
+    if(k==5):
+        break
+    else:
+        a=type(liste[k])
+        print(f"{liste[k]} nin type ı: {a}" )
+        k=k+1
