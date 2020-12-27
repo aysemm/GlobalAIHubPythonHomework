@@ -1,0 +1,15 @@
+lst = [] 
+
+for i in range(0, 4): 
+    element = input()
+    lst.append(element) # adding the element 
+
+lst[2]=int(lst[2])
+lst[3]=int(lst[3])
+
+
+print(f" \n Name: {lst[0]} \n Surname: {lst[1]} \n Age: {lst[2]} \n Birthday : {lst[3]} ")
+if(lst[2]>18):
+    print("You can go out to the street.")
+else:
+    print("You can not go out because it is too dangeorous.")
