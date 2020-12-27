@@ -1,0 +1,63 @@
+name="a"
+surname="b"
+sayac=0
+derssayac=0
+
+while True:
+    kontrol1=input("ad giriniz: ")
+    kontrol2=input("soyad giriniz: ")
+
+    if(kontrol1=="a" and kontrol2=="b"):
+        print("Welcome: ", name, surname)
+        break
+    else:
+        sayac=sayac+1
+        if(sayac==3):
+            print("please try again later")
+            break
+        print(f"{sayac} defa yalnis girdiniz kalan hakkiniz {3-sayac}")
+        
+        
+
+dersliste=["lineer cebir","analitik geometri","programlama","fizik","inkilap"]
+print(dersliste)
+print("lutfen almak istediğiniz dersler icin sirasiyla 1-5 arasi sayi girin. En az 3 ders almalisiniz: ")
+
+while True:
+    sayi=int(input("almak istediginiz ders sayisini girin: "))
+    if(sayi>=3):
+        break
+    else:
+        print("tekrar sayi girin: ")
+
+while True:
+    if(derssayac==sayi):
+        break
+
+    else:
+        dersal=[]
+        ders=int(input())
+
+        if(ders==1):
+            ele=dersliste[0]
+            dersal.append(ele)
+            print(dersal)
+            derssayac=derssayac+1
+        elif(ders==2):
+            ele=dersliste[1]
+            dersal.append(ele)
+            print(dersal)
+            derssayac=derssayac+1
+        elif(ders==3):
+            ele=dersliste[2]
+            dersal.append(ele)
+            print(dersal)
+            derssayac=derssayac+1
+        elif(ders==4):
+            ele=dersliste[4]
+            dersal.append(ele)
+            print(dersal)
+            derssayac=derssayac+1
+            
+            
+#zamanim kalmadi o yuzden biraktim :( 
