@@ -1,0 +1,55 @@
+print("tas icin: 1, kagit icin: 2, makas icin: 3 e basiniz, cıkmak icin e yaziniz.")
+
+while True:
+    giris=input()
+    import random
+    a=random.randint(1,3)
+    
+    if(giris=="e"):
+        print("oyundan ciktin.")
+        break
+    
+    elif(giris=="1" and a==1):
+        print(f"{giris} e bastiniz. Pc de tas yapmisti, berabere kaldiniz.")
+        
+    elif(giris=="1" and a==2):
+        print(f"{giris} e bastiniz. Pc {a} : kagit yapmisti. pc kazandi.")
+        pcsayac=pcsayac+1
+    
+    elif(giris=="1" and a==3):
+        print(f"{giris} e bastiniz. pc {a} : makas yapmisti. siz kazandiniz.")
+        sayac=sayac+1
+        
+    
+    elif(giris=="2" and a==2):
+        print(f"{giris} e bastiniz. Pc de kagit yapmisti, berabere kaldiniz.")
+        
+    elif(giris=="2" and a==3):
+        print(f"{giris} e bastiniz. Pc {a} : makas yapmisti. pc kazandi.")
+        pcsayac=pcsayac+1
+    
+    elif(giris=="2" and a==1):
+        print(f"{giris} e bastiniz. Pc {a} :tas yapmisti. siz kazandiniz.")
+        sayac=sayac+1
+        
+    
+    elif(giris=="3" and a==3):
+        print(f"{giris} e bastiniz. Pc {a} makas yapmisti. Berabere kaldiniz.")
+        
+    elif(giris=="3" and a==1):
+        print(f"{giris} e bastiniz. Pc {a} :tas yapmisti. pc kazandi.")
+        pcsayac=pcsayac+1
+    
+    elif(giris=="3" and a==2):
+        print(f"{giris} e bastiniz. Pc {a} kagit yapmisti. siz kazandiniz.")
+        sayac=sayac+1
+
+
+print(f"sizin toplam puanınız: {sayac}, pc nin toplam puani {pcsayac}")
+
+if(sayac>pcsayac):
+    print("siz kazandiniz")
+elif(sayac==pcsayac):
+    print("berabere kaldiniz.")
+else:
+    print("pc kazandi.")
