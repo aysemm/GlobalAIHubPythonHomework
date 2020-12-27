@@ -1,3 +1,6 @@
+name=input("ismini giriniz.")
+print(name," hosgeldiniz")
+
 print("tas icin: 1, kagit icin: 2, makas icin: 3 e basiniz, cıkmak icin e yaziniz.")
 
 while True:
